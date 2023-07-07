@@ -101,6 +101,7 @@ int main()
             getch();
             break;
         // test
+        // how funnie
         default:
             cout << "Invalid option" << endl;
             getch();
