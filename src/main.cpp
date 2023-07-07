@@ -102,6 +102,7 @@ int main()
             break;
         // test
         // how funnie
+        // this is another test
         default:
             cout << "Invalid option" << endl;
             getch();
