@@ -20,7 +20,7 @@ int main()
         cout << "WELCOME TO MatrixCalculator\n";
         cout << endl;
         cout << "[1].\tAdd matrices\n";
-        cout << "[2].\tMultiply matrixes\n";
+        cout << "[2].\tMultiply matrices\n";
         cout << "[3].\tMultiply matrix by scalar\n";
         cout << "[4].\tGet a matrix transposed\n";
         cout << endl;
@@ -35,6 +35,7 @@ int main()
 
         switch (option) {
         case 1:
+            cout << "## ADD MATRICES SELECTED" << endl;
             readDimensions(matrixA);
             createMatrix(matrixA);
 
@@ -71,6 +72,7 @@ int main()
 
             getch();
             break;
+
         case 2:
 
             readDimensions(matrixA);
@@ -140,6 +142,13 @@ int main()
             deleteMatrix(resultMatrix);
 
             getch();
+            break;
+        case 5:
+            // testing identityMatrix;
+            matrixA = createMatrix(3,4);
+            readMatrix(matrixA);
+            resultMatrix = getIdentityMatrix(matrixA);
+            printMatrix(resultMatrix);
             break;
 
         default:
