@@ -14,6 +14,7 @@ int main()
     Matrix matrixB;
     matrixB.name = "Matrix B";
     Matrix resultMatrix;
+    double scalar;
 
     while (true) {
         cout << "WELCOME TO MatrixCalculator\n";
@@ -24,7 +25,7 @@ int main()
         cout << "[4].\tGet a matrix transposed\n";
         cout << endl;
         cout << "[0].\tLeave\n";
-
+        cout << "Enter an option: ";
         readInt(option);
 
         if (option == 0) {
@@ -95,10 +96,34 @@ int main()
             cout << "=" << endl;
             printMatrix(resultMatrix);
 
-            createMatrix(matrixA);
-            createMatrix(matrixB);
-            createMatrix(resultMatrix);
+            deleteMatrix(matrixA);
+            deleteMatrix(matrixB);
+            deleteMatrix(resultMatrix);
             getch();
+            break;
+
+        case 3:
+
+            readDimensions(matrixA);
+            createMatrix(matrixA);
+            readMatrix(matrixA);
+
+            cout << "Enter an scalar: ";
+            readDouble(scalar);
+
+            resultMatrix = multiplyMatrixByScalar(matrixA, scalar);
+            getch();
+
+            cout << "Entered matrix: " << endl;
+            printMatrix(matrixA);
+            cout << "scalar: " << scalar << endl;
+            cout << "Result Matrix: " << endl;
+            printMatrix(resultMatrix);
+
+            getch();
+            deleteMatrix(matrixA);
+            deleteMatrix(resultMatrix);
+
             break;
 
         default:

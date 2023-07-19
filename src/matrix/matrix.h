@@ -25,5 +25,6 @@ void deleteMatrix(Matrix& matrix);
 void copyMatrix(Matrix& matrixA, Matrix matrixB);
 Matrix addMatrices(Matrix matrixA, Matrix matrixB);
 Matrix multiplyMatrices(Matrix matrixA, Matrix matrixB);
+Matrix multiplyMatrixByScalar(Matrix matrix, double scalar);
 
 #endif
