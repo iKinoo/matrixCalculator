@@ -125,6 +125,22 @@ int main()
             deleteMatrix(resultMatrix);
 
             break;
+        case 4:
+
+            readDimensions(matrixA);
+            createMatrix(matrixA);
+            readMatrix(matrixA);
+            resultMatrix = getTransposedMatrix(matrixA);
+            cout << "Entered matrix:" << endl;
+            printMatrix(matrixA);
+            cout << "Transposed Matrix: " << endl;
+            printMatrix(resultMatrix);
+
+            deleteMatrix(matrixA);
+            deleteMatrix(resultMatrix);
+
+            getch();
+            break;
 
         default:
             cout << "Invalid option" << endl;
