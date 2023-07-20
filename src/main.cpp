@@ -125,6 +125,7 @@ int main()
             getch();
             deleteMatrix(matrixA);
             deleteMatrix(resultMatrix);
+            // delete scalar;
 
             break;
         case 4:

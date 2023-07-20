@@ -1,4 +1,4 @@
-#include "../matrix.h"
+#include "../matrixOperations.h"
 
 Matrix getTransposedMatrix(Matrix matrix)
 {

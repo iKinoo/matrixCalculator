@@ -1,4 +1,4 @@
-#include "../matrix.h"
+#include "../matrixOperations.h"
 
 // Matrix columns must be at least >= matrix rows
 Matrix getIdentityMatrix(Matrix matrix)

@@ -11,7 +11,8 @@
                 "${workspaceFolder}/src/*.cpp",
                 "${workspaceFolder}/src/*/*.cpp",
                 "${workspaceFolder}/src/*/*.h",
-                "${workspaceFolder}/src/*/*/*.cpp",
+                "${workspaceFolder}/src/*/*/*/*.cpp",
+                "${workspaceFolder}/src/*/*/*.h",
                 "-o",
                 "${workspaceFolder}/bin/matrixCalculator"
                 

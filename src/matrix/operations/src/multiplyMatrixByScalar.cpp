@@ -1,4 +1,4 @@
-#include "../matrix.h"
+#include "../matrixOperations.h"
 
 Matrix multiplyMatrixByScalar(Matrix matrix, double scalar)
 {

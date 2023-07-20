@@ -22,10 +22,7 @@ void readMatrix(Matrix& matrix);
 void printMatrix(Matrix matrix);
 void deleteMatrix(Matrix& matrix);
 
-void copyMatrix(Matrix& matrixA, Matrix matrixB);
-Matrix addMatrices(Matrix matrixA, Matrix matrixB);
-Matrix multiplyMatrices(Matrix matrixA, Matrix matrixB);
-Matrix multiplyMatrixByScalar(Matrix matrix, double scalar);
-Matrix getTransposedMatrix(Matrix matrix);
-Matrix getIdentityMatrix(Matrix matrix);
+// functions realted with matrix operations such as sum, multiply, transposed, etc.
+#include "operations/matrixOperations.h"
+
 #endif
